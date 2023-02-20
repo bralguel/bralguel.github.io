@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu lateral</title>
+    <link rel="stylesheet" href="tienda_ropa.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<body>
+    
+    <!-- barra de busqueda -->
+
+    <div class="container">
+        <input type="text" placeholder="Buscar">
+        <div class="btn">
+            <i class="fa fa-search"></i>
+        </div>
+    </div>
+
+    <!-- menu desplegable -->
+    
+    <div id="sidemenu" class="menu-collapsed">
+
+        <!-- HEADER -->
+        
+        
+        <div id="header">
+            <div id="title"><span>Ropa</span></diV>
+            <div id="menu-btn">
+                <div class="btn-hamburguesa"></div>
+                <div class="btn-hamburguesa"></div>
+                <div class="btn-hamburguesa"></div>
+                
+            </div>
+                
+        </div>
+
+         <!-- ITEMS -->
+        
+        
+         <div id="menu-items">
+            <div class="item">
+                <a href="#">
+                    <div class="icon"></div>
+                    <div class="title"><span>Blouses</span></div>
+                </a>
+            </div>
+            <div class="item separator"></div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon"></div>
+                    <div class="title"><span>Camisas</span></div>
+                </a>
+            </div>
+            <div class="item separator"></div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon"></div>
+                    <div class="title"><span>Shorts</span></div>
+                </a>
+            </div>
+            <div class="item separator"></div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon"></div>
+                    <div class="title"><span>Pantalones</span></div>
+                </a>
+            </div>
+            <div class="item separator"></div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon"></div>
+                    <div class="title"><span>Ropa interior</span></div>
+                </a>
+            </div>
+            <div class="item separator"></div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon"></div>
+                    <div class="title"><span>Sombreros</span></div>
+                </a>
+            </div>
+            <div class="item separator"></div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon"></div>
+                    <div class="title"><span>Accesorios</span></div>
+                </a>
+            </div>
+            <div class="item separator"></div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon"></div>
+                    <div class="title"><span>Corbatas</span></div>
+                </a>
+            </div>
+            <div class="item separator"></div>
+            
+        </div>
+    </div>
+   <script>
+        const btn = document.querySelector('#menu-btn');
+        const menu = document.querySelector('#sidemenu');
+        btn.addEventListener('click', e => {
+                menu.classList.toggle("menu-expanded");
+                menu.classList.toggle("menu-collapsed");
+                document.querySelector('body').classList.toggle('body-expanded');
+            }
+        )
+   </script> 
+</body>
+</html>
